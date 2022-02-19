@@ -1,0 +1,12 @@
+<div id="nav">
+  <ul>
+    <li><a [routerLink]="['/admin-dash']">Doctors</a></li>
+    <li><a [routerLink]="['/admin-dash']"> Add new doctor</a></li>
+
+  </ul>
+</div>
+<div class="container row"><app-admin-contorl-card *ngFor="let item of doctorsData"
+  [doctorName]="item.doctorName"
+  [speciality]="item.speciality"
+  [id]="item._id"
+></app-admin-contorl-card></div>

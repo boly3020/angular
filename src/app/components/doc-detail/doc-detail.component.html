@@ -1,0 +1,21 @@
+<div class="card" style="width: 24rem">
+    <input type="button" class="btn btn-primary" value="Back" (click)="back()" />
+    <img src="{{ imgSrc }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+        <h5 class="card-title">{{ doctorsDetails.doctorName }}</h5>
+        <h6 class="card-title">{{ doctorsDetails.phone }}</h6>
+        <p class="card-text">Age: {{ this.doctorsDetails.age }}</p>
+        <p class="card-text">Speciality: {{ doctorsDetails.speciality }}</p>
+        <p class="card-text">Off days: {{ doctorsDetails.offDays }}</p>
+        <p class="card-text">Rating: {{ doctorsDetails.rating }}</p>
+        <p class="card-text">City: {{ doctorsDetails.city }}</p>
+    </div>
+</div>
+<!-- doctorName : String ,
+  //   phone:Number,
+  //   gender:String,
+  //   offDays:String,
+  //   age : Number,
+  //   speciality: String,
+  //   rating: Number,
+  //   city: String, -->
